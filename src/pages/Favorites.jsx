@@ -3,7 +3,6 @@ import { EmptyState } from "../components/ui/Feedback";
 import { useFavorites } from "../hooks/queries/favourites/usefavourite";
 
 export default function Favorites() {
-  const { favorites } = useLibrary();
   const { data, isLoading } = useFavorites()
   if(isLoading) return <p>loading...</p>
 

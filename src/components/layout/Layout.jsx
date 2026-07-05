@@ -5,6 +5,7 @@ import RightRail from "./RightRail";
 
 export default function Layout() {
   const location = useLocation();
+  
 
   return (
     <div className="flex justify-center p-2 md:p-6 min-h-screen">

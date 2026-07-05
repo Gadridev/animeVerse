@@ -43,15 +43,6 @@ export default function Sidebar() {
           </nav>
         </div>
       ))}
-
-      <div className="mt-auto pt-8">
-        <div className="bg-panel border border-white/10 rounded-xl p-4">
-          <p className="text-xs text-mist leading-relaxed">
-            Projet AniVerse — connecté à <span className="text-gold">Jikan API</span> +{" "}
-            <span className="text-jade">JSON Server</span> (maquette).
-          </p>
-        </div>
-      </div>
     </aside>
   );
 }

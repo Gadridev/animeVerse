@@ -1,5 +1,4 @@
 import { useDeferredValue, useMemo, useState } from "react";
-import { CHARACTERS } from "../data/charactersData";
 import CharacterCard from "../components/ui/CharacterCard";
 import { EmptyState, SkeletonGrid } from "../components/ui/Feedback";
 import { useCharactersList } from "../hooks/queries/characters/useCharacters";

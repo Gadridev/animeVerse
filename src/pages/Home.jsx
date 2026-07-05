@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { ANIME } from "../data/animeData";
 import AnimeCard from "../components/ui/AnimeCard";
 import { fetchTopAnime } from "../api/animeApi";
 import { useTopAnime } from "../hooks/queries/useTopRatedAnime";
@@ -21,7 +20,6 @@ export default function Home() {
 
   const heroSlides = [...data.data].sort((a, b) => b.score - a.score).slice(0, 4);
   console.log(heroSlides)
-  const latest = [...ANIME].sort((a, b) => b.year - a.year).slice(0, 8);
 
   return (
     <section>

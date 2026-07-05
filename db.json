@@ -1,12 +1,164 @@
 {
   "favorites": [
-   
+    {
+      "animeId": 52991,
+      "snapshot": {
+        "title": "Sousou no Frieren",
+        "image": "https://cdn.myanimelist.net/images/anime/1015/138006l.webp",
+        "score": 9.26,
+        "year": 2023,
+        "genres": [
+          "Adventure",
+          "Award Winning",
+          "Drama",
+          "Fantasy"
+        ],
+        "episodes": 28
+      },
+      "addedAt": "2026-07-05T22:17:04.731Z",
+      "id": "dXWJKC_YdJg"
+    },
+    {
+      "animeId": 61316,
+      "snapshot": {
+        "title": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
+        "image": "https://cdn.myanimelist.net/images/anime/1540/155824l.webp",
+        "score": 9.19,
+        "year": 2026,
+        "episodes": 19,
+        "genres": [
+          "Drama",
+          "Fantasy",
+          "Suspense"
+        ]
+      },
+      "addedAt": "2026-07-05T22:23:48.785Z",
+      "id": "TT-e62UYJ2I"
+    }
   ],
   "ratings": [
-   
+    {
+      "animeId": 52991,
+      "rating": 8,
+      "note": "tres bonne anime is the best ",
+      "snapshot": {
+        "title": "Sousou no Frieren",
+        "image": "https://cdn.myanimelist.net/images/anime/1015/138006l.webp",
+        "score": 9.26,
+        "year": 2023,
+        "genres": [
+          "Adventure",
+          "Award Winning",
+          "Drama",
+          "Fantasy"
+        ],
+        "episodes": 28
+      },
+      "id": "2sNSNMiLatM"
+    },
+    {
+      "animeId": 61316,
+      "rating": 9,
+      "note": "is good",
+      "snapshot": {
+        "title": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
+        "image": "https://cdn.myanimelist.net/images/anime/1540/155824l.webp",
+        "score": 9.19,
+        "year": 2026,
+        "genres": [
+          "Drama",
+          "Fantasy",
+          "Suspense"
+        ],
+        "episodes": 19
+      },
+      "id": "yvPBbfOSeCw"
+    }
   ],
   "library": [
-    
+    {
+      "status": "Watching",
+      "snapshot": {
+        "title": "Sousou no Frieren",
+        "image": "https://cdn.myanimelist.net/images/anime/1015/138006l.webp",
+        "score": 9.26,
+        "year": 2023,
+        "genres": [
+          "Adventure",
+          "Award Winning",
+          "Drama",
+          "Fantasy"
+        ],
+        "episodes": 28
+      },
+      "id": "08PO7kBklnc"
+    },
+    {
+      "status": "Completed",
+      "snapshot": {
+        "title": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
+        "image": "https://cdn.myanimelist.net/images/anime/1540/155824l.webp",
+        "score": 9.19,
+        "year": 2026,
+        "genres": [
+          "Drama",
+          "Fantasy",
+          "Suspense"
+        ],
+        "episodes": 19
+      },
+      "id": "pAoIkEJXiXM"
+    },
+    {
+      "status": "Plan To Watch",
+      "snapshot": {
+        "title": "Sousou no Frieren",
+        "image": "https://cdn.myanimelist.net/images/anime/1015/138006l.webp",
+        "score": 9.26,
+        "year": 2023,
+        "genres": [
+          "Adventure",
+          "Award Winning",
+          "Drama",
+          "Fantasy"
+        ],
+        "episodes": 28
+      },
+      "id": "ST0uTkJEATI"
+    },
+    {
+      "status": "Watching",
+      "snapshot": {
+        "title": "Sousou no Frieren",
+        "image": "https://cdn.myanimelist.net/images/anime/1015/138006l.webp",
+        "score": 9.26,
+        "year": 2023,
+        "genres": [
+          "Adventure",
+          "Award Winning",
+          "Drama",
+          "Fantasy"
+        ],
+        "episodes": 28
+      },
+      "id": "Nj7_o2oDsig"
+    },
+    {
+      "status": "Watching",
+      "snapshot": {
+        "title": "Cowboy Bebop",
+        "image": "https://cdn.myanimelist.net/images/anime/4/19644l.webp",
+        "score": 8.75,
+        "year": 1998,
+        "genres": [
+          "Action",
+          "Award Winning",
+          "Sci-Fi"
+        ],
+        "episodes": 26
+      },
+      "id": "mbyBp-1ujXc"
+    }
   ],
   "$schema": "./node_modules/json-server/schema.json"
 }

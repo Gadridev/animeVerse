@@ -23,7 +23,7 @@ export default function Library() {
   const [filter, setFilter] = useState("");
   const { data, isLoading } = useAllLibrary();
   const removeLibrary = useRemoveLibraryEntry();
-  const saveLibraryMutation = useSaveLibraryStatus(); // ✅ من غير animeId هنا
+  const saveLibraryMutation = useSaveLibraryStatus(); 
 
   if (isLoading) return <p className="text-white">Chargement...</p>;
 

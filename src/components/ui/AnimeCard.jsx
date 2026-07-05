@@ -9,7 +9,7 @@ export default function AnimeCard({ anime, widthClass = "", idfavourit = null })
   const { isFavorite,favoriteId } = useIsFavorite(anime.mal_id || idfavourit)
   const addFavoriteMutation = useAddFavorite();
   const removeFavoriteMutation = useRemoveFavorite();
-  console.log(favoriteId,anime.mal_id)
+  console.log(anime)
 
   const handleAddFavorite = () => {
     if (isFavorite) {
@@ -22,7 +22,8 @@ export default function AnimeCard({ anime, widthClass = "", idfavourit = null })
           image: anime.images?.webp?.large_image_url,
           score: anime.score,
           year: anime.year,
-          episodes: anime.episodes
+          episodes: anime.episodes,
+          genres:anime.genres.map((genre)=>genre.name)
         },
         addedAt: new Date().toISOString(),
       });

@@ -1,6 +1,4 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { getAnimeById } from "../data/animeData";
-import { getCharacterById, CHARACTER_HUES, getInitials } from "../data/charactersData";
 import { useOneCharacter } from "../hooks/queries/characters/useCharacter";
 
 export default function CharacterDetail() {
@@ -15,7 +13,6 @@ export default function CharacterDetail() {
     return <p className="text-mist">Ce personnage est introuvable.</p>;
   }
 
-  const anime = getAnimeById(character.animeId);
  
 
   return (

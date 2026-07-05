@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { getAnimeById } from "../data/animeData";
 import { useLibrary } from "../context/LibraryContext";
 import { useAnimeDetails } from "../hooks/queries/detailsanime/useAnimeDetails";
 import { useIsFavorite } from "../hooks/queries/favourites/checkingFavourite";
@@ -39,11 +38,13 @@ export default function AnimeDetail() {
   if (isLoading) return <p>Loading...</p>;
   if (isError) return <p className="text-white">Error: {error.message}</p>;
   const anime = data.data;
+  console.log(anime.genres)
   const snapshot = {
     title: anime.title,
     image: anime.images?.webp?.large_image_url,
     score: anime.score,
     year: anime.year,
+    genres:anime.genres.map((genre)=>genre.name),
     episodes: anime.episodes
   }
   console.log(libraryEntry)
@@ -81,7 +82,7 @@ export default function AnimeDetail() {
 
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
         <div className="relative h-full flex flex-col justify-end p-7 md:p-10">
-          <button onclick="navigate('anime')" className="text-sm text-mist hover:text-paper mb-4 inline-flex items-center gap-2 w-fit">← Retour au catalogue</button>
+          <buttonon Click={() => navigate("/anime")}className="text-sm text-mist hover:text-paper mb-4 inline-flex items-center gap-2 w-fit">← Retour au catalogue</buttonon>
           <p className="font-mono text-[11px] tracking-[0.2em] text-gold uppercase mb-2">シュタインズ・ゲート</p>
           <h1 className="font-display text-3xl md:text-5xl max-w-2xl leading-[0.95]">Steins;Gate</h1>
           <div className="flex flex-wrap items-center gap-3 mt-4 text-xs font-mono text-mist">
@@ -135,7 +136,7 @@ export default function AnimeDetail() {
 
           <label className="text-xs font-mono text-mist uppercase tracking-wide">Statut bibliothèque</label>
           <select
-            value={libraryEntry?.status ?? "Non ajouté"}
+            value={libraryEntry?.status ?? ""}
             onChange={handleStatusChange}
             className="w-full mt-2 mb-5 bg-panel-2 border border-white/10 focus:border-jade rounded-lg px-3 py-2.5 text-sm outline-none"
           >

@@ -1,6 +1,4 @@
 import { Link, useParams } from "react-router-dom";
-import { getAnimeById } from "../data/animeData";
-import { getCharactersByAnimeId } from "../data/charactersData";
 import CharacterCard from "../components/ui/CharacterCard";
 import { EmptyState } from "../components/ui/Feedback";
 import { useAnimeCharacters } from "../hooks/queries/characters/useAnimeCharacter";

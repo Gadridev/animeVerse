@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { getAnimeById } from "../data/animeData";
 import { useLibrary } from "../context/LibraryContext";
 import { EmptyState } from "../components/ui/Feedback";
 import { useAllRatings } from "../hooks/queries/rating/useAllRatings";
@@ -17,14 +16,14 @@ export default function Ratings() {
   
 
   const entries = [...ratings.entries()];
-  console.log(ratings,entries)
+  console.log(entries)
 
 
   return (
     <section className="max-w-3xl text-white">
       <h1 className="font-display text-3xl mb-7">Mes Notes</h1>
       <div className="flex flex-col gap-4 min-h-[200px]">
-        {entries.length === 0 ? (
+        {data.length === 0 ? (
           <EmptyState
             title="Aucune note enregistrée"
             subtitle="Notez un anime depuis sa fiche pour le voir apparaître ici."

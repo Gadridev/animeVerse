@@ -1,5 +1,4 @@
 import { Link, useLocation } from "react-router-dom";
-import { ANIME } from "../../data/animeData";
 import { useLibrary } from "../../context/LibraryContext";
 import { useTopAnime } from "../../hooks/queries/useTopRatedAnime";
 import { useFavorites } from "../../hooks/queries/favourites/usefavourite";
@@ -23,10 +22,10 @@ export default function RightRail() {
   const visible = location.pathname === "/" || location.pathname === "/anime";
   if (!visible) return null;
 
-  const watchlist = [...favorites]
-    .map((id) => ANIME.find((a) => a.id === id))
-    .filter(Boolean)
-    .slice(0, 4);
+  // const watchlist = [...favorites]
+  //   .map((id) => ANIME.find((a) => a.id === id))
+  //   .filter(Boolean)
+  //   .slice(0, 4);
 
   return (
     <aside className="hidden xl:flex flex-col w-80 shrink-0 border-l border-white/5 px-6 py-8 overflow-y-auto">
@@ -44,13 +43,13 @@ export default function RightRail() {
         </Link>
       </div>
       <div className="flex flex-col gap-3">
-        {watchlist.length === 0 ? (
+        {/* {watchlist.length === 0 ? (
           <p className="text-xs text-mist">Aucun favori pour l'instant.</p>
         ) : (
           favouriteData.map((anime) => (
             <RailRow key={anime.id} anime={anime.snapshot} subtitle={STATUS_LABELS[library.get(anime.id)] || "Non suivi"} />
           ))
-        )}
+        )} */}
       </div>
     </aside>
   );

@@ -1,6 +1,6 @@
 export function EmptyState({ title, subtitle }) {
   return (
-    <div className="col-span-full flex flex-col items-center justify-center text-center py-16 border border-dashed border-white/15 rounded-2xl">
+    <div className="col-span-full flex flex-col text-white items-center justify-center text-center py-16 border border-dashed border-white/15 rounded-2xl">
       <div className="w-12 h-12 rounded-full border-2 border-mist/40 flex items-center justify-center mb-4 text-mist">
         ?
       </div>
