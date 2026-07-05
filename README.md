@@ -1,4 +1,7 @@
 # AniVerse — React + Tailwind
+<img width="1920" height="1440" alt="52_1x_shots_so" src="https://github.com/user-attachments/assets/4edacf4d-06c7-498f-a340-614d6ee4d81d" />
+<img width="1920" height="1440" alt="728shots_so" src="https://github.com/user-attachments/assets/4b6ae8f5-7453-4ff5-a2f9-4f2d49870800" />
+
 
 A clean React conversion of the AniVerse UI mockup, built with Vite,
 React Router, and Tailwind CSS v4.
